@@ -40,7 +40,12 @@ public class ButtonsNText extends JPanel{
 		lowerCaseButton.addActionListener(new MyButtonAction());
 		buttonGroup.add(lowerCaseButton);
 		
+		panel.add(upperCaseButton);
+		panel.add(lowerCaseButton);
+		
 		continuousButton = new JCheckBox("Continuous");
+		
+		panel.add(continuousButton);
 	}
 	
 	
@@ -54,6 +59,15 @@ public class ButtonsNText extends JPanel{
 				String text = textLine.getText();
 				textLine.setText(text.toLowerCase());				
 			}	
+		}
+	}
+	
+	class MyMouseEvent implements MouseListener{
+		public void mousePressed (MouseEvent e){
+			
+		}
+		public void mouseReleased(MouseEvent e){
+			
 		}
 	}
 	
